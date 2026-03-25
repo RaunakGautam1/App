@@ -1,0 +1,14 @@
+public class HelloApp {
+    public static void main(String[] args) {
+
+        // If no arguments passed → default "World"
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } 
+        else {
+            // Join all names with space
+            String names = String.join(" ", args);
+            System.out.println("Hello, " + names + "!");
+        }
+    }
+}
